@@ -12,7 +12,8 @@ html{
 }
 
 .container{
-    width: 1140px;
+    width: 100%;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -105,14 +106,15 @@ nav a:hover{
     position: relative;
 }
 
-.sliders{
+.banner .sliders{
     background-color: rgba(0,0,0,0.8);
     height: 100%;
     display: flex;
     width: 350vw;
+    transition: all 0.4s linear;
 }
 
-.slide{
+.banner .slide{
     width: 100vw;
     height: 100%;
     display: flex;
@@ -296,6 +298,7 @@ h1{
 .ourprojects-photos{
     display: flex;
     width: 100%;
+    max-width: 114rem;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 3rem;
@@ -346,3 +349,113 @@ h1{
 .photo-mascara:hover .mascara{
     display: flex;
 }
+
+
+/*Our team*/
+.mascara-bg{
+    background-image: url(../../media/complementos/bg.jpg);
+}
+
+.mascara-bg .geral{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.mascara-bg .sliders{
+    display: flex;
+    margin: auto;
+    transition: all 0.4s linear;
+}
+
+.mascara-bg .slide{
+    width: 36rem;
+    background-color: white;
+    margin-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 4rem 2rem;
+}
+
+.mascara-bg div.slide:first-child{
+    margin-left: 1.5rem;
+}
+
+.hidden-slide{
+    overflow-x: hidden;
+    display: flex;
+}
+
+.member-name{
+    color: #000;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.member-ocupation{
+    color: #000;
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+}
+
+.member-photo{
+    width: 20rem;
+    object-fit: cover;
+    margin-bottom: 4rem;
+}
+
+.member-icons{
+    display: flex;
+}
+
+.container-icon{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    background-color: var(--cor3);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+div.container-icon:first-child{
+    margin-left: 0.5rem;
+}
+
+.icons-itself{
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+}
+
+.mascara-bg .sliders-pointers{
+    display: flex;
+    align-self: center;
+    margin-top: 2rem;
+}
+
+.mascara-bg .slider-pointer{
+    border: 0.3rem solid var(--cor6);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    margin: 0 0.4rem;
+    cursor: pointer;
+}
+
+.mascara-bg .slider-pointer.selected{
+    background-color: var(--cor6);
+}
+
+.hidden-slide{
+    overflow-x: hidden;
+    display: flex;
+}
+
+.mascara-bg .section-body{
+    flex-direction: column;
+}
+
+
