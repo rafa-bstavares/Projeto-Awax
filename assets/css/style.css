@@ -274,6 +274,7 @@ h1{
 
 
 /*Our projects*/
+
 .ourprojects-menu li{
     color: #000;
     padding: 2rem;
@@ -362,7 +363,6 @@ h1{
 
 .mascara-bg .sliders{
     display: flex;
-    margin: auto;
     transition: all 0.4s linear;
 }
 
@@ -386,19 +386,19 @@ h1{
     display: flex;
 }
 
-.member-name{
+.member-clients-name{
     color: #000;
     font-weight: 600;
     font-size: 2.5rem;
 }
 
-.member-ocupation{
+.member-clients-ocupation{
     color: #000;
     font-size: 1.4rem;
     margin-bottom: 4rem;
 }
 
-.member-photo{
+.member-clients-photo{
     width: 20rem;
     object-fit: cover;
     margin-bottom: 4rem;
@@ -457,5 +457,62 @@ div.container-icon:first-child{
 .mascara-bg .section-body{
     flex-direction: column;
 }
+
+
+
+/*Happy Clients*/
+
+.hidden-happy-clients .sliders{
+    display: flex;
+    width: 360rem;
+    transition: all 0.4s linear;
+    margin-bottom: 3rem;
+}
+
+.hidden-happy-clients .slide{
+    width: 114rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 20rem;
+}
+
+.member-clients-photo img{
+    width: inherit;
+}
+
+.hidden-happy-clients{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.client-speech{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--cor3);
+}
+
+.hidden-happy-clients .sliders-pointers{
+    display: flex;
+    align-self: center;
+    margin-top: 2rem;
+}
+
+.hidden-happy-clients .slider-pointer{
+    border: 0.3rem solid var(--cor6);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    margin: 0 0.4rem;
+    cursor: pointer;
+}
+
+.hidden-happy-clients .slider-pointer.selected{
+    background-color: var(--cor6);
+}
+
 
 

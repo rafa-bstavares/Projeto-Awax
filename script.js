@@ -16,5 +16,12 @@ document.querySelectorAll(".mascara-bg .slider-pointer").forEach(function(item, 
     })
 })
 
-
+document.querySelectorAll(".hidden-happy-clients .slider-pointer").forEach(function(item,index){
+    item.addEventListener("click", function(){
+        let newMargin = index*(document.querySelector(".hidden-happy-clients .slide").clientWidth)
+        document.querySelector(".hidden-happy-clients .sliders").style.marginLeft = `-${newMargin}px`
+        document.querySelector(".hidden-happy-clients .slider-pointer.selected").classList.remove("selected")
+        item.classList.add('selected')
+    })
+})
 
